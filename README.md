@@ -1,7 +1,7 @@
 <h3 align="center">✨ <br> This is me! <br></h3>
 <h3 align="center">💫 About Me 
-<h3 text-size="10px">
- "Hello, I am a developer. I create projects and make them available to people. If there are technical problems in my projects, you can reach my e-mail address.  my services on nowte.dev services<br>
+<h3 text-size="10px" align="center">
+ Hello, I am a developer. I create projects and make them available to people. If there are technical problems in my projects, you can reach my e-mail address.  my services on nowte.dev services<br>
  
 </h3>
 <h3 align="center">🔭 Currently working on <a href="https://github.com/Virtual-Stylus" style="text-align:center">@Virtual Stylus Studio</a>, <a href="https://github.com/Devs-Script" style="text-align:center">@Devs Script®</a></h3>
