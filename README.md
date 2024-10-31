@@ -1,4 +1,6 @@
-<h3 align="center">✨ <br> This is Me! <br> -----------------------</h3>
+<h3 align="center">✨ <br> This is Me!</h3>
+
+-----------------------
 
 <p align="center">
 Hello! I am a developer. I create projects and make them available to the public. If you encounter any technical issues with my projects, feel free to reach out to me via email. You can find my services at nowte.dev.<br>
