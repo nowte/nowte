@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" font-family="ConsolasFallback,Consolas,monospace" width="989px" height="591px" font-size="16px">
+<style>
+@font-face {
+src: local('Consolas'), local('Consolas Bold');
+font-family: 'ConsolasFallback';
+font-display: swap;
+-webkit-size-adjust: 109%;
+size-adjust: 109%;
+}
+text, tspan {white-space: pre;}
+.d{fill:#a8a8a8;}
+.b{fill:#000000;font-weight:bold;}
+.w{fill:#1a1a1a;}
+.m{fill:#6e6e6e;}
+.cur,.dot{fill:#000000;}
+@keyframes fx{from{opacity:0}to{opacity:1}}
+@keyframes bl{0%,49%{opacity:1}50%,100%{opacity:0}}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.45}}
+@keyframes type{from{transform:translateX(0)}}
+.cur{animation:bl 1.06s steps(1) infinite;}
+.dot{font-weight:bold;animation:pulse 2.4s ease-in-out infinite;}
+.l2{animation:fx .2s ease-out 1.10s backwards;}
+.l3{animation:fx .2s ease-out 1.15s backwards;}
+.l4{animation:fx .2s ease-out 1.19s backwards;}
+.l5{animation:fx .2s ease-out 1.24s backwards;}
+.l6{animation:fx .2s ease-out 1.28s backwards;}
+.l7{animation:fx .2s ease-out 1.33s backwards;}
+.l8{animation:fx .2s ease-out 1.37s backwards;}
+.l9{animation:fx .2s ease-out 1.42s backwards;}
+.l10{animation:fx .2s ease-out 1.46s backwards;}
+.l11{animation:fx .2s ease-out 1.51s backwards;}
+.l12{animation:fx .2s ease-out 1.55s backwards;}
+.l13{animation:fx .2s ease-out 1.60s backwards;}
+.l14{animation:fx .2s ease-out 1.64s backwards;}
+.l15{animation:fx .2s ease-out 1.69s backwards;}
+.l16{animation:fx .2s ease-out 1.73s backwards;}
+.l17{animation:fx .2s ease-out 1.77s backwards;}
+.l19{animation:fx .2s ease-out 1.90s backwards;}
+.l20{animation:fx .2s ease-out 2.03s backwards;}
+.l21{animation:fx .2s ease-out 2.16s backwards;}
+.l22{animation:fx .2s ease-out 2.29s backwards;}
+.l23{animation:fx .2s ease-out 2.42s backwards;}
+.l24{animation:fx .2s ease-out 2.55s backwards;}
+.l25{animation:fx .2s ease-out 2.68s backwards;}
+.l27{animation:fx .2s ease-out 2.94s backwards;}
+.typer{transform:translateX(422px);animation:type 1.00s steps(44) backwards;}
+</style>
+<rect width="989px" height="591px" fill="#ffffff" rx="12"/>
+<text x="15" y="32" fill="#3a3a3a">
+<tspan x="15" y="32"><tspan class="w"> $ systemctl status nowte.service --no-pager</tspan></tspan>
+<tspan x="15" y="72" class="l2"><tspan class="dot">● </tspan><tspan class="b">nowte.service</tspan><tspan class="d"> - </tspan><tspan class="w">part time developer</tspan><tspan class="d"> @ </tspan><tspan class="w">nowtes</tspan></tspan>
+<tspan x="15" y="92" class="l3"><tspan class="b">     Loaded</tspan><tspan class="d">: </tspan><tspan class="w">loaded </tspan><tspan class="d">(/etc/systemd/system/nowte.service; </tspan><tspan class="w">enabled</tspan><tspan class="d">; preset: enabled)</tspan></tspan>
+<tspan x="15" y="112" class="l4"><tspan class="b">     Active</tspan><tspan class="d">: </tspan><tspan class="b">active (running)</tspan><tspan class="d"> since 2024-05-24; </tspan><tspan class="w" id="age_data">1 year, 3 months, 1 day</tspan><tspan class="d"> ago</tspan></tspan>
+<tspan x="15" y="132" class="l5"><tspan class="b">       Docs</tspan><tspan class="d">: </tspan><tspan class="m">man:nowte(1)</tspan></tspan>
+<tspan x="15" y="152" class="l6">             <tspan class="m">https://github.com/nowte</tspan></tspan>
+<tspan x="15" y="172" class="l7"><tspan class="b">   Main PID</tspan><tspan class="d">: </tspan><tspan class="w">1337</tspan><tspan class="d"> (nowte)</tspan></tspan>
+<tspan x="15" y="192" class="l8"><tspan class="b">     Status</tspan><tspan class="d">: </tspan><tspan class="w">"my work centers on simplifying complexity and delivering efficient outcomes."</tspan></tspan>
+<tspan x="15" y="212" class="l9"><tspan class="b">      Tasks</tspan><tspan class="d">: </tspan><tspan class="w" id="repo_data">95</tspan><tspan class="d"> repos </tspan><tspan class="d">(limit: </tspan><tspan class="w" id="contrib_data">133</tspan><tspan class="d"> contributed)</tspan></tspan>
+<tspan x="15" y="232" class="l10"><tspan class="b">     Memory</tspan><tspan class="d">: </tspan><tspan class="w" id="loc_data">446,276</tspan><tspan class="d"> lines </tspan><tspan class="d">(peak: </tspan><tspan class="w" id="loc_add">523,178</tspan><tspan class="d">, freed: </tspan><tspan class="m" id="loc_del">76,902</tspan><tspan class="d">)</tspan></tspan>
+<tspan x="15" y="252" class="l11"><tspan class="b">        CPU</tspan><tspan class="d">: </tspan><tspan class="w" id="account_age">5y 9m 22d</tspan><tspan class="d"> on GitHub</tspan></tspan>
+<tspan x="15" y="272" class="l12"><tspan class="b">     CGroup</tspan><tspan class="d">: </tspan><tspan class="d">/system.slice/nowte.service</tspan></tspan>
+<tspan x="15" y="292" class="l13">             <tspan class="d">├─</tspan><tspan class="m">1337</tspan> <tspan class="w">cargo run --release --bin recon</tspan></tspan>
+<tspan x="15" y="312" class="l14">             <tspan class="d">├─</tspan><tspan class="m"> 911</tspan> <tspan class="w">go run ./cmd/api</tspan></tspan>
+<tspan x="15" y="332" class="l15">             <tspan class="d">├─</tspan><tspan class="m"> 502</tspan> <tspan class="w">node inference-server.js</tspan></tspan>
+<tspan x="15" y="352" class="l16">             <tspan class="d">├─</tspan><tspan class="m"> 256</tspan> <tspan class="w">python3 today.py --profile</tspan></tspan>
+<tspan x="15" y="372" class="l17">             <tspan class="d">└─</tspan><tspan class="m"> 128</tspan> <tspan class="w">nowtes-cli setup --profile</tspan></tspan>
+<tspan x="15" y="412" class="l19"><tspan class="d">Aug 25 04:12:07 github </tspan><tspan class="m">systemd[1]</tspan><tspan class="d">: </tspan><tspan class="d">Started </tspan><tspan class="w">part time developer</tspan><tspan class="d">.</tspan></tspan>
+<tspan x="15" y="432" class="l20"><tspan class="d">Aug 25 04:12:07 github </tspan><tspan class="m">nowte[1337]</tspan><tspan class="d">: </tspan><tspan class="b">stars</tspan>:<tspan class="d" id="star_data_dots"> ........... </tspan><tspan class="w" id="star_data">342</tspan></tspan>
+<tspan x="15" y="452" class="l21"><tspan class="d">Aug 25 04:12:08 github </tspan><tspan class="m">nowte[1337]</tspan><tspan class="d">: </tspan><tspan class="b">commits</tspan>:<tspan class="d" id="commit_data_dots"> ................. </tspan><tspan class="w" id="commit_data">2,116</tspan></tspan>
+<tspan x="15" y="472" class="l22"><tspan class="d">Aug 25 04:12:08 github </tspan><tspan class="m">nowte[1337]</tspan><tspan class="d">: </tspan><tspan class="b">followers</tspan>:<tspan class="d" id="follower_data_dots"> ....... </tspan><tspan class="w" id="follower_data">196</tspan></tspan>
+<tspan x="15" y="492" class="l23"><tspan class="d">Aug 25 04:12:09 github </tspan><tspan class="m">nowte[1337]</tspan><tspan class="d">: </tspan><tspan class="b">languages: </tspan><tspan class="w">Rust, Go, JavaScript</tspan></tspan>
+<tspan x="15" y="512" class="l24"><tspan class="d">Aug 25 04:12:09 github </tspan><tspan class="m">nowte[1337]</tspan><tspan class="d">: </tspan><tspan class="b">hobbies: </tspan><tspan class="w">cybersecurity, artificial intelligence, backend systems</tspan></tspan>
+<tspan x="15" y="532" class="l25"><tspan class="d">Aug 25 04:12:10 github </tspan><tspan class="m">systemd[1]</tspan><tspan class="d">: </tspan><tspan class="d">Reached target </tspan><tspan class="b">Ship It</tspan><tspan class="d">.</tspan></tspan>
+<tspan x="15" y="572" class="l27"><tspan class="d"> $ </tspan><tspan class="cur">█</tspan></tspan>
+</text>
+<rect class="typer" x="15" y="17" width="422" height="22" fill="#ffffff"/>
+</svg>
