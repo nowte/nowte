@@ -112,7 +112,7 @@ def graph_repos_stars(count_type, owner_affiliation, cursor=None, add_loc=0, del
         if count_type == 'repos':
             return request.json()['data']['user']['repositories']['totalCount']
         elif count_type == 'stars':
-            return stars_counter(request.json()['data']['user']['repositories']['edges'])
+            return stars_counter(valid_edges(request.json()['data']['user']['repositories']['edges']))
 
 
 def recursive_loc(owner, repo_name, data, cache_comment, addition_total=0, deletion_total=0, my_commits=0, cursor=None):
@@ -218,10 +218,10 @@ def loc_query(owner_affiliation, comment_size=0, force_cache=False, cursor=None,
     variables = {'owner_affiliation': owner_affiliation, 'login': USER_NAME, 'cursor': cursor}
     request = simple_request(loc_query.__name__, query, variables)
     if request.json()['data']['user']['repositories']['pageInfo']['hasNextPage']:   # If repository data has another page
-        edges += request.json()['data']['user']['repositories']['edges']            # Add on to the LoC count
+        edges += valid_edges(request.json()['data']['user']['repositories']['edges']) # Add on to the LoC count
         return loc_query(owner_affiliation, comment_size, force_cache, request.json()['data']['user']['repositories']['pageInfo']['endCursor'], edges)
     else:
-        return cache_builder(edges + request.json()['data']['user']['repositories']['edges'], comment_size, force_cache)
+        return cache_builder(edges + valid_edges(request.json()['data']['user']['repositories']['edges']), comment_size, force_cache)
 
 
 def cache_builder(edges, comment_size, force_cache, loc_add=0, loc_del=0):
@@ -295,6 +295,18 @@ def force_close_file(data, cache_comment):
         f.writelines(cache_comment)
         f.writelines(data)
     print('There was an error while writing to the cache file. The file,', filename, 'has had the partial data saved and closed.')
+
+
+def valid_edges(edges):
+    """
+    GitHub returns a null node for repositories the token cannot read.
+    Drop them here, at the point edges enter the program, so stars_counter,
+    cache_builder and flush_cache can all assume every edge has a node.
+    """
+    kept = [edge for edge in edges if edge and edge.get('node')]
+    skipped = len(edges) - len(kept)
+    if skipped: print('   {:<24} {:>6}'.format('unreadable repos skipped:', skipped))
+    return kept
 
 
 def stars_counter(data):
